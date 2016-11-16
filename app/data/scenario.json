@@ -1,0 +1,26 @@
+{
+    "goals" : [
+        {
+            "name" : "Goal 1",
+            "items" : {
+                "pro" : [1, 2, 3, 4],
+                "neutral" : [5, 6],
+                "contra" : [7, 8, 9]
+            }
+        }, {
+            "name" : "Goal 2",
+            "items" : {
+                "pro" : [1, 2],
+                "neutral" : [5],
+                "contra" : [8, 9]
+            }
+        }, {
+            "name" : "Goal 3",
+            "items" : {
+                "pro" : [7, 6, 5],
+                "neutral" : [8],
+                "contra" : [9, 3, 2]
+            }
+        }
+    ]
+}

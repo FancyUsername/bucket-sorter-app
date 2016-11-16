@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 2000px;
+            padding-top: 70px;
+        }
+        
+        .navbar {
+            box-shadow: 0 0 2px #999;
+            background-color: rgba(248,248,248,0.9);
+        }
+        
+        .show-grid {
+            margin-bottom: 15px;
+        }
+        
+        .show-grid [class^="col-"] {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #eee;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid #ddd;
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+        
+        .logo-img {
+            height: 2em;
+        }
+    </style>
+</head>
+
+<body ng-app="app">
+    <app-nav></app-nav>
+
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-sortable-view/src/angular-sortable-view.min.js"></script>
+    <script src="bower_components/angular-ui-router/angular-ui-router.min.js"></script>
+    <!--    <script src="//unpkg.com/ui-router-visualizer@2"></script>-->
+
+    <script src="app/app.js"></script>
+    <script src="app/app.controller.js"></script>
+    <script src="app/app-nav.js"></script>
+    <script src="app/scenario.factory.js"></script>
+    <script src="app/components/about.js"></script>
+    <script src="app/components/home.js"></script>
+    <script src="app/components/goal-bucket.js"></script>
+
+</body>
+
+</html>
