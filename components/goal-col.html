@@ -1,0 +1,20 @@
+<div class="goal-col">
+    <header class="goal-header"><h3 class="panel-title">{{goal.name}}</h3></header>
+    <main data-goal="{{goal.idx}}">
+        <ul class="q-area q-positive goal-{{goal.idx}}">
+            <alt-card ng-repeat="alt in goal.qPositive"></alt-card>
+        </ul>
+        <ul class="q-area q-neutral goal-{{goal.idx}}">
+            <alt-card ng-repeat="alt in goal.qNeutral"></alt-card>
+        </ul>
+        <ul class="q-area q-negative goal-{{goal.idx}}">
+            <alt-card ng-repeat="alt in goal.qNegative"></alt-card>
+        </ul>
+    </main>
+    <footer>
+        <div class="button">
+            <a href="#" class="btn btn-default" ng-click="altEditor=true;focusEditor($event);" ng-show="!altEditor">Alternative hinzufügen...</a>
+        </div>
+        <input type="text" class="form-control" autofocus ng-show="altEditor" ng-blur="altEditor=false" ng-keydown="altKeyPressed($event)"/>
+    </footer>
+</div>

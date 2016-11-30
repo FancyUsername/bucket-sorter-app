@@ -1,0 +1,8 @@
+<li class="alt-card" data-alt="{{alt.id}}" ng-mouseenter="options=true" ng-mouseleave="options=false">
+    <div>
+        <span ng-show="!isEditMode">{{alt.name}}</span>
+        <input type="text" autoselect ng-show="isEditMode" ng-model="alt.name"/>
+    </div>
+    <span ng-hide="!options" class="glyphicon glyphicon-remove" style="float: right;margin-right:3px;transform:translateY(-18px)" ng-click="remove()"></span>
+    <span ng-hide="!options" class="glyphicon glyphicon-pencil" style="float: right;margin-right:3px;transform:translateY(-18px)" ng-click="edit()"></span>
+</li>

@@ -1,0 +1,113 @@
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 120px;
+    background: radial-gradient(ellipse at center, #feffff 0%,#efefef 100%);
+}
+
+#app-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0;
+}
+
+.board {
+	vertical-align: top;
+}
+
+.goal-col {
+    border-radius: 4px;
+    border: 1px solid rgba(60, 60, 60, 0.298039);
+    border-top-width: 0px;
+    border-left-width: 0px;
+    box-shadow: 0px 0px 5px #888888;
+    min-height: 20px;
+    cursor: pointer;
+    list-style: none;
+    background-color: rgb(241, 241, 241);
+}
+
+.goal-header {
+    margin-bottom: 5px;
+    padding: 10 10 10 10;
+}
+
+.goal-col main {
+    overflow: auto;
+    padding: 5 5 5 5;
+    background-color: rgb(255, 255, 255);
+}
+
+.goal-col ul {
+    list-style: none;
+}
+    
+.goal-col footer {
+    padding: 10 10 10 10;
+}
+
+.alt-card {
+    background: #ffffff;
+    padding: 5 5 5 5;
+    min-height: 20px;
+    position: relative;
+/*    text-size-adjust: 100%;*/
+    margin-bottom: 6px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-height: 20px;
+    cursor: pointer;
+    
+    border-bottom-color: rgb(204, 204, 204);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.alt-card:last-child {
+    margin-bottom: 4px;
+}
+
+.ui-sortable-helper {
+    list-style: none;
+    -webkit-animation:spin-sorthelper 0.25s ease-out forwards;
+    -moz-animation:spin-sorthelper 0.25s ease-out forwards;
+    animation:spin-sorthelper 0.25s ease-out forwards;
+    -webkit-box-shadow: -3px 3px 5px 0px rgba(148,148,148,1);
+    -moz-box-shadow: -3px 3px 5px 0px rgba(148,148,148,1);
+    box-shadow: -3px 3px 5px 0px rgba(148,148,148,1);
+}
+
+@-moz-keyframes spin-sorthelper { 100% { -moz-transform: rotate(5deg); } }
+@-webkit-keyframes spin-sorthelper { 100% { -webkit-transform: rotate(5deg); } }
+@keyframes spin-sorthelper { 100% { -webkit-transform: rotate(5deg); transform:rotate(5deg); } }
+
+.q-area {
+    border-radius: 4px;
+    padding: 5 5 1 5;
+    margin-bottom: 5px;
+    min-height: 20px;
+    border-left: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-style: solid;
+}
+
+.q-positive {
+    border-color: rgba(0, 255, 0, 0.5);
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.q-neutral {
+    border-color: rgba(0, 0, 255, 0.5);
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.q-negative {
+    border-color: rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
+}

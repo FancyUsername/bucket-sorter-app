@@ -1,0 +1,33 @@
+{
+    "goals": [
+        {
+            "name": "Hohes Prestige",
+            "qPositive": ["kombi", "klein"],
+            "qNeutral": ["sport"],
+            "qNegative": ["gelaende", "ober"]
+        },
+        {
+            "name": "Geringer Preis",
+            "qPositive": ["kombi", "klein"],
+            "qNeutral": ["sport"],
+            "qNegative": ["gelaende", "ober"]
+        }
+    ],
+    "alternatives": {
+        "kombi" : {
+            "name": "Kombi"
+        },
+        "klein" : {
+            "name": "Kleinwagen"
+        },
+        "ober" : {
+            "name": "Oberklasselimousine"
+        },
+        "sport" : {
+            "name": "Sportwagen"
+        },
+        "gelaende" : {
+            "name": "Geländewagen"
+        }
+    }
+}
